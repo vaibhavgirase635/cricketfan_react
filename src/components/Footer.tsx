@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             <p className="text-neutral-400 mb-4">
               The ultimate cricket platform for fans, players, and organizers, bringing all aspects of cricket into one comprehensive app.
             </p>
-            <p className="text-primary-500 font-semibold mb-6">
+            <p className="text-neutral-400 font-semibold mb-6">
               WHERE EVERY SCORE PAYS!
             </p>
             <div className="flex space-x-4">
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
             </p>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <Mail size={18} className="text-primary-500 mr-3 flex-shrink-0" />
+                <Mail size={18} className="text-secondary-500 mr-3 flex-shrink-0" />
                 <a href="mailto:Social@cricketfanapp.com" className="text-neutral-400 hover:text-white transition-colors">Social@cricketfanapp.com</a>
               </li>
               <li className="flex items-center">
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
                 <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">WhatsApp</a>
               </li>
               <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-500 mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-secondary-500 mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                 <a href="https://cricketfanapp.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">www.cricketfanapp.com</a>
               </li>
             </ul>

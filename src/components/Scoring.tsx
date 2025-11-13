@@ -52,7 +52,7 @@ const Scoring: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
             Live Scoring
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Scoring</h2>
@@ -72,7 +72,7 @@ const Scoring: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-neutral-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-full flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary-500 to-secondary-900 rounded-full flex items-center justify-center mb-4">
                   <div className="text-white">
                     {highlight.icon}
                   </div>
@@ -88,7 +88,7 @@ const Scoring: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-r from-secondary-600 to-secondary-900 rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <div className="max-w-3xl mx-auto">
             <Coins size={48} className="mx-auto mb-4" />

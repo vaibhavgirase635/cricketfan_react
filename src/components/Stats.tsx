@@ -52,7 +52,7 @@ const StatCounter: React.FC<StatProps> = ({
       transition={{ duration: 0.5 }}
       className="text-center bg-white/90 backdrop-blur-sm rounded-lg p-4"
     >
-      <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
+      <div className="text-4xl md:text-5xl font-bold text-secondary-600 mb-2">
         {prefix}{inView ? count : 0}{suffix}
       </div>
       <div className="text-neutral-800 font-medium">{label}</div>
@@ -175,7 +175,7 @@ const Stats: React.FC = () => {
         </motion.div>
         
         {/* ✅ Dynamic Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-secondary">
           <StatCounter value={stats.active_users} suffix="+" label="Active Users" />
           <StatCounter value={stats.tournaments} suffix="+" label="Tournaments" />
           <StatCounter value={stats.matches} suffix="+" label="Matches Scored" />

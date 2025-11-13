@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <a href="#download" className="btn btn-primary">
+                <a href="#download" className="btn btn-secondary">
                   <Download size={20} className="mr-2" />
                   Download App
                 </a>
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">
-                    <BarChart3 className="text-primary-600" size={24} />
+                    <BarChart3 className="text-secondary-600" size={24} />
                   </div>
                   <a className="text-neutral-700" href="#scoring">Live Scoring</a>
                 </div>
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">
-                    <Gamepad2 className="text-primary-600" size={24} />
+                    <Gamepad2 className="text-secondary-600" size={24} />
                   </div>
                   <p className="text-neutral-700">Earn Coins</p>
                 </div>
@@ -94,7 +94,7 @@ const Hero: React.FC = () => {
               ref={phoneRef}
             >
               <div className="relative mx-auto w-64 md:w-80">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-[40px] blur-xl opacity-20 -z-10 transform scale-105"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary-500 to-secondary-900 rounded-[40px] blur-xl opacity-20 -z-10 transform scale-105"></div>
                 
                 <div className="relative bg-black rounded-[40px] overflow-hidden border-[8px] border-neutral-800 shadow-2xl">
                   <img 
@@ -108,8 +108,8 @@ const Hero: React.FC = () => {
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 md:top-10 md:-right-10 bg-white p-3 rounded-lg shadow-lg floating">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Trophy size={20} className="text-primary-600" />
+                  <div className="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                    <Trophy size={20} className="text-secondary-600" />
                   </div>
                   <div className="ml-3">
                     <p className="text-xs font-semibold">Tournament</p>
@@ -143,7 +143,7 @@ const Hero: React.FC = () => {
               duration: 1.5 
             }}
           >
-            <a href="#features" className="text-neutral-500 hover:text-primary-600 transition-colors">
+            <a href="#features" className="text-neutral-500 hover:text-secondary-600 transition-colors">
               <ArrowDownCircle size={32} />
             </a>
           </motion.div>

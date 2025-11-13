@@ -48,7 +48,7 @@ const FoundersMessage: React.FC = () => {
                 onClick={() => setShowVideo(true)}
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
               >
-                <Play size={24} className="text-primary-600 ml-1" />
+                <Play size={24} className="text-secondary-600 ml-1" />
               </button>
             </div>
           </motion.div>
@@ -94,7 +94,7 @@ const FoundersMessage: React.FC = () => {
           <div className="relative w-full max-w-4xl aspect-video">
             <button
               onClick={() => setShowVideo(false)}
-              className="absolute -top-12 right-0 text-white hover:text-primary-500 transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-secondary-500 transition-colors"
             >
               <X size={24} />
             </button>

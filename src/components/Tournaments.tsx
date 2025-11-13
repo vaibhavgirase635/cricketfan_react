@@ -41,7 +41,7 @@ const TournamentCard: React.FC<TournamentProps> = ({
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute bottom-4 left-4 z-20">
-          <span className="bg-primary-600 text-white text-xs py-1 px-3 rounded-full">
+          <span className="bg-secondary-600 text-white text-xs py-1 px-3 rounded-full">
             Featured
           </span>
         </div>
@@ -64,7 +64,7 @@ const TournamentCard: React.FC<TournamentProps> = ({
         </div>
       </div>
       
-      <button className="text-primary-600 font-medium hover:text-primary-700 transition-colors flex items-center">
+      <button className="text-secondary-600 font-medium hover:text-primary-700 transition-colors flex items-center">
         <span>View Details</span>
         <svg className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -121,7 +121,7 @@ const Tournaments: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
             Featured Tournaments
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Tournaments</h2>
@@ -131,7 +131,7 @@ const Tournaments: React.FC = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left mb-12">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4 text-primary-600">For Organizers:</h3>
+              <h3 className="text-xl font-semibold mb-4 text-secondary-600">For Organizers:</h3>
               <ul className="space-y-2 text-neutral-700">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">•</span>

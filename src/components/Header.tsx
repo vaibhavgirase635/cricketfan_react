@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className="container flex justify-between items-center">
         <div className="flex flex-col items-start">
           <Logo />
-          <div className="inline-block mt-1 px-4 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">
+          <div className="inline-block mt-1 px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full text-sm">
             Where Every Score Pays
           </div>
         </div>
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <a href="#download" className="btn btn-primary">
+          <a href="#download" className="btn btn-secondary">
             Download App
           </a>
         </div>

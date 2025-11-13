@@ -36,7 +36,7 @@ const CTA: React.FC = () => {
                 <Download size={20} className="mr-2" />
                 Download App
               </a>
-              <a href="#" className="btn bg-primary-600 text-white hover:bg-primary-700">
+              <a href="#" className="btn bg-secondary-900 text-white hover:bg-secondary-700">
                 Learn More
                 <ArrowRight size={16} className="ml-2" />
               </a>
@@ -57,10 +57,10 @@ const CTA: React.FC = () => {
                 className="rounded-3xl relative z-10 w-full h-auto"
               />
               <div className="absolute -right-4 -bottom-4 bg-white p-4 rounded-lg shadow-lg z-20">
-                <div className="text-primary-600 font-bold text-xl">4.9</div>
+                <div className="text-secondary-600 font-bold text-xl">4.9</div>
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-primary-600 fill-current" viewBox="0 0 24 24">
+                    <svg key={i} className="w-4 h-4 text-secondary-600 fill-current" viewBox="0 0 24 24">
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
                   ))}

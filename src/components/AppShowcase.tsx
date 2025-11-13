@@ -60,7 +60,7 @@ const AppShowcase: React.FC = () => {
             <div className="bg-neutral-100 p-4 rounded-lg">
               <div className="flex items-start">
                 <div className="mr-4 mt-1">
-                  <Download size={20} className="text-primary-600" />
+                  <Download size={20} className="text-secondary-600" />
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Free to download</h4>

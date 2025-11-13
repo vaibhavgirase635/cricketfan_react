@@ -43,7 +43,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ content, name, role, avat
           <Star 
             key={i} 
             size={18} 
-            className={`inline-block mr-1 ${i < rating ? 'text-primary-500 fill-primary-500' : 'text-neutral-300'}`} 
+            className={`inline-block mr-1 ${i < rating ? 'text-secondary-500 fill-secondary-500' : 'text-neutral-300'}`} 
           />
         ))}
       </div>

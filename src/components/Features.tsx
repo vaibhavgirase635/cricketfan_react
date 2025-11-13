@@ -32,7 +32,7 @@ const FeatureCard: React.FC<FeatureProps> = ({ icon, title, description, delay }
       transition={{ duration: 0.6, delay: delay * 0.1 }}
       className="feature-card group"
     >
-      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-secondary-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary-500 to-secondary-900 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
         <div className="text-white">
           {icon}
         </div>
@@ -104,7 +104,7 @@ const Features: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
             Powerful Features
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Features</h2>
