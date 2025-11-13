@@ -9,9 +9,9 @@ const navItems = [
     label: 'Features', 
     href: '#features',
     dropdown: [
-      { label: 'Scoring', href: '#features-scoring' },
-      { label: 'Stats', href: '#features-stats' },
-      { label: 'Fantasy', href: '#features-tournaments' }
+      { label: 'Scoring', href: '#scoring' },
+      { label: 'Stats', href: '#stats' },
+      { label: 'Fantasy', href: '#features-fantasy' }
     ]
   },
   { label: 'Tournaments', href: '#tournaments' },

@@ -100,7 +100,7 @@ const Stats: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-neutral-900 relative overflow-hidden">
+    <section id="stats" className="py-20 bg-neutral-900 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(26,95,122,0.4)_0%,rgba(255,107,53,0)_70%)]"></div>
       
       {/* Cricket ball decoration */}

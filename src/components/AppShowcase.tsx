@@ -47,11 +47,11 @@ const AppShowcase: React.FC = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#" className="btn bg-black text-white hover:bg-neutral-800 transition-colors">
+              <a href="" className="btn bg-black text-white hover:bg-neutral-800 transition-colors">
                 <Apple size={20} className="mr-2" />
                 App Store
               </a>
-              <a href="#" className="btn bg-black text-white hover:bg-neutral-800 transition-colors">
+              <a href="https://play.google.com/store/apps/details?id=com.cricketfanapp.app" className="btn bg-black text-white hover:bg-neutral-800 transition-colors">
                 <PlayCircle size={20} className="mr-2" />
                 Google Play
               </a>
