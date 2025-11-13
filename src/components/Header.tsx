@@ -5,8 +5,8 @@ import Logo from './Logo';
 
 const navItems = [
   { label: 'Home', href: '#' },
-  { 
-    label: 'Features', 
+  {
+    label: 'Features',
     href: '#features',
     dropdown: [
       { label: 'Scoring', href: '#scoring' },
@@ -40,22 +40,26 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white shadow-md py-2 top-0' 
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
+          ? 'bg-white shadow-md py-2 top-0'
           : 'bg-transparent py-4 top-0'
-      }`}
+        }`}
     >
       <div className="container flex justify-between items-center">
-        <Logo />
+        <div className="flex flex-col items-start">
+          <Logo />
+          <div className="inline-block mt-1 px-4 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">
+            Where Every Score Pays
+          </div>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <div key={item.label} className="relative group">
-              <a 
-                href={item.href} 
+              <a
+                href={item.href}
                 className="text-neutral-800 hover:text-primary-600 font-medium transition-colors"
                 onClick={(e) => {
                   if (item.dropdown) {
@@ -67,14 +71,14 @@ const Header: React.FC = () => {
                 <div className="flex items-center">
                   {item.label}
                   {item.dropdown && (
-                    <ChevronDown 
-                      size={16} 
+                    <ChevronDown
+                      size={16}
                       className={`ml-1 transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`}
                     />
                   )}
                 </div>
               </a>
-              
+
               {item.dropdown && (
                 <AnimatePresence>
                   {activeDropdown === item.label && (
@@ -110,8 +114,8 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-neutral-800" 
+        <button
+          className="md:hidden text-neutral-800"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -120,7 +124,7 @@ const Header: React.FC = () => {
         {/* Mobile Navigation Menu */}
         <AnimatePresence>
           {mobileMenuOpen && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: "100%" }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
@@ -137,7 +141,7 @@ const Header: React.FC = () => {
                 <nav className="py-4">
                   {navItems.map((item) => (
                     <div key={item.label}>
-                      <a 
+                      <a
                         href={item.href}
                         onClick={(e) => {
                           if (item.dropdown) {
@@ -151,8 +155,8 @@ const Header: React.FC = () => {
                       >
                         {item.label}
                         {item.dropdown && (
-                          <ChevronDown 
-                            size={16} 
+                          <ChevronDown
+                            size={16}
                             className={`transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`}
                           />
                         )}
@@ -176,8 +180,8 @@ const Header: React.FC = () => {
                 </nav>
               </div>
               <div className="p-6 border-t">
-                <a 
-                  href="#download"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.cricketfanapp.app"
                   className="btn btn-primary w-full"
                   onClick={() => setMobileMenuOpen(false)}
                 >

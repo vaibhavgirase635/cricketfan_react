@@ -14,6 +14,8 @@ echo "Creating Production Build..."
 # For ReactJS VueJS and Nuxt JS
 npm run build
 
+# copy .htaccess file to dist
+cp .htaccess dist/.htaccess
 # For NextJS
 # npm run export
 

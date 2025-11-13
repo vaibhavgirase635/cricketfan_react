@@ -37,15 +37,13 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full mb-6">
-                Where Every Score Pays
-              </div>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span>Welcome to </span>
                 <span className="text-gradient">CricketFanApp</span>
               </h1>
               <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-                Get real-time scores, manage tournaments, track your stats, and connect with your cricket community — all in one app. Whether you're following your favorite matches or hosting your own, CricketFanApp keeps you in the game.
+                Get real-time scores, manage tournaments, track your stats, play fantasy cricket and connect with your cricket community — all in one app. Whether you're following your favorite matches or hosting your own, CricketFanApp keeps you in the game.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -63,19 +61,19 @@ const Hero: React.FC = () => {
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">
                     <Trophy className="text-secondary-600" size={24} />
                   </div>
-                  <p className="text-neutral-700">Tournaments</p>
+                  <a className="text-neutral-700" href="#tournaments">Tournaments</a>
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">
                     <BarChart3 className="text-primary-600" size={24} />
                   </div>
-                  <p className="text-neutral-700">Live Scoring</p>
+                  <a className="text-neutral-700" href="#scoring">Live Scoring</a>
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">
                     <Users className="text-secondary-600" size={24} />
                   </div>
-                  <p className="text-neutral-700">Community</p>
+                  <a className="text-neutral-700" href='#testimonials'>Community</a>
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-full w-12 h-12 mx-auto flex items-center justify-center shadow-md mb-2">

@@ -32,7 +32,7 @@ const CTA: React.FC = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <a href="#" className="btn bg-white text-secondary-700 hover:bg-neutral-100">
+              <a href="https://play.google.com/store/apps/details?id=com.cricketfanapp.app" className="btn bg-white text-secondary-700 hover:bg-neutral-100">
                 <Download size={20} className="mr-2" />
                 Download App
               </a>

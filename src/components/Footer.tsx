@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                 <a href="#" className="text-neutral-400 hover:text-white transition-colors">About Us</a>
               </li>
               <li>
-                <a href="#contact" className="text-neutral-400 hover:text-white transition-colors">Contact</a>
+                <a href="#contact_us" className="text-neutral-400 hover:text-white transition-colors">Contact</a>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
-          <div>
+          <div id="contact_us">
             <h4 className="text-neutral-400 font-semibold text-lg mb-4">Contact Us</h4>
             <p className="text-neutral-400 mb-4 text-sm">
               We'd love to hear from you! Whether you have a question, want to report an issue, suggest a feature, or discuss partnerships.
