@@ -11,17 +11,17 @@ const AppShowcase: React.FC = () => {
 
   const screens = [
     {
-      src: "https://images.pexels.com/photos/3531895/pexels-photo-3531895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "/cricket image 1.jpg",
       alt: "Cricket App Dashboard",
       delay: 0.2
     },
     {
-      src: "https://images.pexels.com/photos/5384624/pexels-photo-5384624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "cricket image2.jpg",
       alt: "Cricket Stats Screen",
       delay: 0.4
     },
     {
-      src: "https://images.pexels.com/photos/5384634/pexels-photo-5384634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "cricket image3.jpg",
       alt: "Cricket Fantasy League",
       delay: 0.6
     }
