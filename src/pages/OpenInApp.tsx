@@ -7,7 +7,7 @@ export default function OpenInApp() {
   const { type, id } = useParams();
 
   useEffect(() => {
-    const intentUrl = `intent:${type}/${id}#Intent;scheme=https;package=${APP_PACKAGE};end;`;
+    const intentUrl = `intent://open/${type}/${id}#Intent;scheme=https;package=${APP_PACKAGE};end;`;
     const playStoreUrl = `https://play.google.com/store/apps/details?id=${APP_PACKAGE}`;
 
     // Try to open app
