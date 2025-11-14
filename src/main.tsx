@@ -5,6 +5,7 @@ import App from './App';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import Rules from './pages/Rules';
+import OpenInApp from "./pages/OpenInApp";
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/rules" element={<Rules />} />
+        <Route path="/open/:type/:id" element={<OpenInApp />} />
       </Routes>
     </Router>
   </StrictMode>

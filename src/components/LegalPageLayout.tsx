@@ -23,7 +23,7 @@ const LegalPageLayout: React.FC<LegalPageLayoutProps> = ({
         <div className="container">
           <a 
             href="/" 
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 transition-colors mb-8 group"
+            className="inline-flex items-center text-secondary-600 hover:text-secondary-700 transition-colors mb-8 group"
           >
             <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to Home
@@ -32,7 +32,7 @@ const LegalPageLayout: React.FC<LegalPageLayoutProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <div className="mb-12 pb-8 border-b border-neutral-200">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-secondary-500 to-secondary-900">
                   {title}
                 </h1>
                 {subtitle && (
