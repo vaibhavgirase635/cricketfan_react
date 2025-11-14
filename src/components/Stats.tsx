@@ -123,14 +123,14 @@ const Stats: React.FC = () => {
             Performance Analytics
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Stats</h2>
-          <p className="text-primary-100 max-w-3xl mx-auto mb-6">
+          <p className="text-secondary-100 max-w-3xl mx-auto mb-6">
             Because numbers tell the story of every great game. CricketFanApp gives players, teams, and fans access to detailed, real-time statistics — making it easier to analyze performance and celebrate milestones.
           </p>
           
           <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-12">
             <h3 className="text-xl font-semibold text-white mb-4">What You Can Track:</h3>
             <div className="grid md:grid-cols-2 gap-4 text-left">
-              <ul className="space-y-2 text-primary-100">
+              <ul className="space-y-2 text-secondary-100">
                 <li className="flex items-start">
                   <span className="text-white mr-2">•</span>
                   <span>Batting, bowling, and fielding stats for every player</span>
@@ -144,7 +144,7 @@ const Stats: React.FC = () => {
                   <span>Win/loss ratios, averages, and strike rates</span>
                 </li>
               </ul>
-              <ul className="space-y-2 text-primary-100">
+              <ul className="space-y-2 text-secondary-100">
                 <li className="flex items-start">
                   <span className="text-white mr-2">•</span>
                   <span>Tournament and match-based analytics</span>
@@ -160,7 +160,7 @@ const Stats: React.FC = () => {
           <p className="text-white text-lg font-medium mb-2">
             Every stat you build adds to your CricketFanApp profile — growing your legacy within the game and earning you coins for consistent performance.
           </p>
-          <p className="text-primary-100 text-lg italic">
+          <p className="text-secondary-100 text-lg italic">
             Because here, every score and every stat truly counts.
           </p>
         </motion.div>

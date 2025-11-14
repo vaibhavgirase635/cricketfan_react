@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 
 const navItems = [
-  { label: 'Home', href: '#' },
+  { label: 'Home', href: '/' },
   {
     label: 'Features',
     href: '#features',

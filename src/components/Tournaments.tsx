@@ -47,7 +47,7 @@ const TournamentCard: React.FC<TournamentProps> = ({
         </div>
       </div>
       
-      <h3 className="text-xl font-semibold mb-3 group-hover:text-primary-600 transition-colors">{title}</h3>
+      <h3 className="text-xl font-semibold mb-3 group-hover:text-secondary-600 transition-colors">{title}</h3>
       
       <div className="space-y-2 text-sm text-neutral-600 mb-4">
         <div className="flex items-center">
@@ -64,7 +64,7 @@ const TournamentCard: React.FC<TournamentProps> = ({
         </div>
       </div>
       
-      <button className="text-secondary-600 font-medium hover:text-primary-700 transition-colors flex items-center">
+      <button className="text-secondary-600 font-medium hover:text-secondary-700 transition-colors flex items-center">
         <span>View Details</span>
         <svg className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -134,15 +134,15 @@ const Tournaments: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4 text-secondary-600">For Organizers:</h3>
               <ul className="space-y-2 text-neutral-700">
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-2">•</span>
+                  <span className="text-secondary-600 mr-2">•</span>
                   <span>Create and customize tournaments with ease.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-2">•</span>
+                  <span className="text-secondary-600 mr-2">•</span>
                   <span>Add teams, fixtures, and live scores.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-2">•</span>
+                  <span className="text-secondary-600 mr-2">•</span>
                   <span>Track standings, leaderboards, and player stats automatically.</span>
                 </li>
               </ul>
@@ -174,7 +174,7 @@ const Tournaments: React.FC = () => {
 
         {loading ? (
           <div className="text-center py-12">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-secondary-600"></div>
             <p className="mt-4 text-neutral-600">Loading tournaments...</p>
           </div>
         ) : (
