@@ -16,14 +16,19 @@ const AppShowcase: React.FC = () => {
       delay: 0.2
     },
     {
-      src: "cricket image2.jpg",
+      src: "/cricket image2.jpg",
       alt: "Cricket Stats Screen",
       delay: 0.4
     },
     {
-      src: "cricket image3.jpg",
+      src: "/cricket image3.jpg",
       alt: "Cricket Fantasy League",
       delay: 0.6
+    },
+    {
+      src: "/cricket image5.jpg",
+      alt: "Cricket Ground",
+      delay: 0.8
     }
   ];
 

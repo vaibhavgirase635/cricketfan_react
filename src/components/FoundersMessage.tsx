@@ -11,7 +11,7 @@ const FoundersMessage: React.FC = () => {
   const [showVideo, setShowVideo] = React.useState(false);
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section id="founder_message" className="section bg-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,107,53,0.05)_0%,rgba(255,255,255,0)_70%)]"></div>
       <div className="container">
         <motion.div

@@ -8,7 +8,8 @@ import {
   MessageCircle,
   Bell,
   TrendingUp,
-  Coins
+  Coins,
+  Target
 } from 'lucide-react';
 
 interface FeatureProps {
@@ -86,6 +87,12 @@ const Features: React.FC = () => {
       title: 'Coin System',
       description: 'Earn coins for your activity — playing, scoring, watching, or engaging. Redeem in the Market for exclusive rewards and cricket-themed goodies.',
       id: 'features-coins'
+    },
+    {
+      icon: <Target size={24} />,
+      title: 'Fantasy Cricket',
+      description: 'The Fantasy Cricket feature is available only inside the app. It is purely for fun and engagement — no real money or betting is involved.',
+      id: 'features-fantasy'
     }
   ];
 

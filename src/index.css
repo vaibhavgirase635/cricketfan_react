@@ -51,7 +51,7 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary-500 to-secondary-900;
 }
 
 .card-hover-effect:hover {
