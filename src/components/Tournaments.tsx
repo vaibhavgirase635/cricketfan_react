@@ -186,7 +186,7 @@ const Tournaments: React.FC = () => {
                 teams={tournament.max_teams || 0}
                 date={`${new Date(tournament.start_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${new Date(tournament.end_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`}
                 location={tournament.location}
-                image={tournament.tournament_logo ? `https://api.cricketfanapp.com/${tournament.tournament_logo}` : 'https://images.pexels.com/photos/3461526/pexels-photo-3461526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                image={tournament.tournament_logo ? `https://api.cricketfanapp.com/${tournament.tournament_logo}` : '/tournament logo1.jpg'}
                 delay={index}
               />
             ))}
