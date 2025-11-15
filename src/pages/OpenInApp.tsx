@@ -7,16 +7,16 @@ export default function OpenInApp() {
   const { type, id } = useParams();
 
   useEffect(() => {
-    const intentUrl = `intent://open/${type}/${id}#Intent;scheme=https;package=${APP_PACKAGE};end;`;
+    const intentUrl = `intent://cricketfanapp.com/open/${type}/${id}#Intent;scheme=https;package=${APP_PACKAGE};end;`;
     const playStoreUrl = `https://play.google.com/store/apps/details?id=${APP_PACKAGE}`;
 
-    // Try to open the app
+    // 1) Try to open the app
     window.location.href = intentUrl;
 
-    // After 800ms, if app didn't open → redirect to Play Store
+    // 2) Wait before falling back
     const timer = setTimeout(() => {
       window.location.href = playStoreUrl;
-    }, 2000);
+    }, 1200);
 
     return () => clearTimeout(timer);
   }, [type, id]);
@@ -24,7 +24,7 @@ export default function OpenInApp() {
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
       <h2>Opening Cricket Fan App…</h2>
-      <p>Please wait, redirecting...</p>
+      <p>Please wait...</p>
     </div>
   );
 }
