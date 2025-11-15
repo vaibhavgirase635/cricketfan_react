@@ -13,12 +13,7 @@ export default function OpenInApp() {
     // Try to open app
     window.location.href = intentUrl;
 
-    // Fallback to Play Store
-    const timer = setTimeout(() => {
-      window.location.href = playStoreUrl;
-    }, 1200);
-
-    return () => clearTimeout(timer);
+    window.location.href = playStoreUrl;
   }, [type, id]);
 
   return (
