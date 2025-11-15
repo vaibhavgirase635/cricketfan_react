@@ -10,10 +10,15 @@ export default function OpenInApp() {
     const intentUrl = `intent://open/${type}/${id}#Intent;scheme=https;package=${APP_PACKAGE};end;`;
     const playStoreUrl = `https://play.google.com/store/apps/details?id=${APP_PACKAGE}`;
 
-    // Try to open app
+    // Try to open the app
     window.location.href = intentUrl;
 
-    window.location.href = playStoreUrl;
+    // After 800ms, if app didn't open → redirect to Play Store
+    const timer = setTimeout(() => {
+      window.location.href = playStoreUrl;
+    }, 800);
+
+    return () => clearTimeout(timer);
   }, [type, id]);
 
   return (
