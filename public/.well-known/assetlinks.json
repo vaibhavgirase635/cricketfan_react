@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.cricketfanapp.app",
+        "sha256_cert_fingerprints": [
+          "F4:30:FC:A6:AE:97:A6:CF:A8:D3:88:EC:33:8F:7D:69:72:1E:AA:81:ED:04:B0:46:AB:F7:4B:F3:C3:F8:BE:AB",
+          "DE:20:68:3F:C6:89:7B:74:00:49:3A:C3:B9:FA:2F:86:F5:DF:79:7E:3F:FC:AD:AD:70:C8:66:B1:1C:2F:5D:88"
+        ]
+      }
+    }
+  ]
