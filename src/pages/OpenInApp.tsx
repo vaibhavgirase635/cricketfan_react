@@ -16,7 +16,7 @@ export default function OpenInApp() {
     // After 800ms, if app didn't open → redirect to Play Store
     const timer = setTimeout(() => {
       window.location.href = playStoreUrl;
-    }, 800);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [type, id]);
