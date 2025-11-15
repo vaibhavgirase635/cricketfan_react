@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "UF997LPH7R.com.cricketfanapp.app",
+        "paths": ["*"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "UF997LPH7R.com.cricketfanapp.app"
+    ]
+  }
+}
