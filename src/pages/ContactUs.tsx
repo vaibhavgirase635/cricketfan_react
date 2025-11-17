@@ -36,7 +36,7 @@ export default function ContactUs() {
     try {
       const resp = await fetch("https://api.cricketfanapp.com/api/reports/contact", {
         method: "POST",
-        headers: {"x-api-key": "cricketfanapp_secret_key_2024", "Content-Type": "application/json" },
+        headers: { "x-api-key": "cricketfanapp_secret_key_2024", "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
@@ -67,20 +67,25 @@ export default function ContactUs() {
       subtitle="Have a question, feedback or want to work together? Send us a message and we'll get back to you within 1-2 business days."
       lastUpdated=""
     >
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
-        <img src="/Contact Page.png" alt="" />
+      <div className="w-full flex justify-center bg-gray-50 p-4 md:p-6">
+        <img
+          src="/Contact Page.png"
+          alt="Contact Banner"
+          className="w-full max-w-[500px] h-auto object-contain"
+        />
       </div>
+
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {/* Left: contact info */}
           <div className="flex flex-col justify-between">
             <div>
-              
+
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium">Email</h3>
@@ -208,7 +213,7 @@ export default function ContactUs() {
           </form>
         </motion.div>
       </div>
-      
+
     </LegalPageLayout>
   )
 }
