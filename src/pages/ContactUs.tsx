@@ -67,7 +67,9 @@ export default function ContactUs() {
       subtitle="Have a question, feedback or want to work together? Send us a message and we'll get back to you within 1-2 business days."
       lastUpdated=""
     >
-      
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
+        <img src="/Contact Page.png" alt="" />
+      </div>
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
@@ -86,7 +88,7 @@ export default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <a href="tel:+911234567890" className="text-sm text-blue-600">+918595875410</a>
+                  <a href="tel:+918585955704" className="text-sm text-blue-600">+918585955704</a>
                 </div>
 
               </div>
