@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                 <a href="#founder_message" className="text-neutral-400 hover:text-white transition-colors">About Us</a>
               </li>
               <li>
-                <a href="#contact_us" className="text-neutral-400 hover:text-white transition-colors">Contact</a>
+                <a href="/contact-us" className="text-neutral-400 hover:text-white transition-colors">Contact</a>
               </li>
             </ul>
           </div>

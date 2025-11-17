@@ -28,9 +28,9 @@ const testimonials: TestimonialProps[] = [
   },
   {
     content: "The fantasy cricket feature is addictive! I've connected with so many other cricket enthusiasts and the competitions make watching matches even more exciting.",
-    name: "Vikram Patel",
+    name: "Amitabh",
     role: "Cricket Fan",
-    avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    avatar: "/amitabh.jpg",
     rating: 4
   }
 ];
