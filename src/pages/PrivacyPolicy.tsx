@@ -61,6 +61,7 @@ const PrivacyPolicy: React.FC = () => {
       <ul>
         <li>We retain user data for performance, analytics, and app stability.</li>
         <li>If users request removal or violate policies, we disable the account rather than delete data, to maintain system integrity.</li>
+        <li>Upon account deletion, all personal data is removed. Anonymous statistical data that does not identify the user may be retained to preserve match integrity.</li>
       </ul>
 
       <h2>8. Security</h2>
