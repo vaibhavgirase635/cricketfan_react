@@ -7,6 +7,7 @@ import Terms from './pages/Terms';
 import Rules from './pages/Rules';
 import OpenInApp from "./pages/OpenInApp";
 import ContactUs from './pages/ContactUs';
+import Competition from './pages/Competition';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/rules" element={<Rules />} />
         <Route path="/open/:type/:id" element={<OpenInApp />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/competitions" element={<Competition />} />
       </Routes>
     </Router>
   </StrictMode>
