@@ -176,9 +176,9 @@ const Stats: React.FC = () => {
         
         {/* ✅ Dynamic Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-secondary">
-          <StatCounter value={stats.active_users} suffix="+" label="Active Users" />
-          <StatCounter value={stats.tournaments} suffix="+" label="Tournaments" />
-          <StatCounter value={stats.matches} suffix="+" label="Matches Scored" />
+          <StatCounter value={stats.active_users} label="Active Users" />
+          <StatCounter value={stats.tournaments} label="Tournaments" />
+          <StatCounter value={stats.matches} label="Matches Scored" />
           <StatCounter value={stats.satisfactionRate} suffix="%" label="Satisfaction Rate" />
         </div>
       </div>
