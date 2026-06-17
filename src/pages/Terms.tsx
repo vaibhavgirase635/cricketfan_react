@@ -96,6 +96,9 @@ const Terms: React.FC = () => {
         <li>We make no guarantees regarding uninterrupted service, accuracy, or reliability.</li>
         <li>Fantasy features, rewards, and marketplace items are subject to change.</li>
         <li>User-generated content represents individual opinions, not those of CricketFanApp.</li>
+        <li>Coin rewards, marketplace credits, rankings, and promotional incentives are subject to eligibility requirements determined by CricketFanApp.</li>
+        <li>Not all matches or activities qualify for rewards. CricketFanApp reserves the right to modify reward criteria, participation requirements, earning rates, redemption values, and marketplace availability at any time without prior notice.</li>
+        <li>Coins have no cash value and may only be redeemed in accordance with CricketFanApp's official rules and marketplace policies.</li>
       </ul>
 
       <h2>11. Limitation of Liability</h2>
@@ -125,7 +128,15 @@ const Terms: React.FC = () => {
       <ul>
         <li>These Terms are governed by the laws of India, and disputes shall be handled under its jurisdiction.</li>
       </ul>
-
+      <h2>14. Coin Eligibility & Fair Play Policy</h2>
+      <ul>
+        <li>To maintain a fair rewards system, CricketFanApp may establish minimum participation requirements before coins, rewards, points, or marketplace credits are awarded.</li>
+        <li>While matches may be created and played with fewer than eleven (11) players per team, only matches that meet CricketFanApp's eligibility requirements will qualify for coin rewards.</li>
+        <li>Effective immediately, coin rewards will only be awarded for matches where both teams have a minimum of eleven (11) registered players.</li>
+        <li>CricketFanApp reserves the right to withhold, adjust, reverse, or remove coins, rewards, rankings, or marketplace credits obtained through artificial activity, duplicate accounts, fake matches, manipulated participation, or any activity intended to circumvent the intended reward structure.</li>
+        <li>Any attempt to exploit the rewards system may result in coin removal, marketplace restrictions, account suspension, or account disabling.</li>
+        
+      </ul>
       <h2>15. Contact Us</h2>
       <ul>
         <li>📧 Email: support@cricketfanapp.com</li>
