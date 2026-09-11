@@ -137,7 +137,18 @@ const Terms: React.FC = () => {
         <li>Any attempt to exploit the rewards system may result in coin removal, marketplace restrictions, account suspension, or account disabling.</li>
         
       </ul>
-      <h2>15. Contact Us</h2>
+      <h2>15. Platform Terms & Conditions</h2>
+      <ul>
+        <li>Marketplace Model: The platform operates as a third-party marketplace connecting buyers and independent vendors. The platform does not take physical ownership of vendor inventory.</li>
+        <li>Category Commission Structure: Platform fees are deducted automatically per transaction based on product category:</li>
+        <li>Apparel & Accessories (e.g., T-Shirts): 8% commission per sale.</li>
+        <li>Sports Equipment (e.g., Cricket Bats): 4% commission per sale.</li>
+        <li>Vendor-Managed Courier & Shipping: Vendors are solely responsible for order dispatch, courier selection, packaging, and providing valid tracking numbers within 48 hours of order confirmation.</li>
+        <li>Payout Schedule & Escrow: Sales earnings (minus platform commission) are held in escrow and released to the vendor wallet 7 days post-delivery confirmation to account for potential return windows.</li>
+        <li>Dispute & Refund Policy: In the event of damaged items or non-delivery, vendors must respond to customer inquiries within 24 hours. The platform reserves the right to issue refunds from vendor wallet balances if non-delivery is proven.</li>
+        
+      </ul>
+      <h2>16. Contact Us</h2>
       <ul>
         <li>📧 Email: support@cricketfanapp.com</li>
         <li>🌐 Website: https://cricketfanapp.com</li>
