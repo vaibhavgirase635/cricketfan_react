@@ -67,7 +67,7 @@ export default function ContactUs() {
       subtitle="Have a question, feedback or want to work together? Send us a message and we'll get back to you within 1-2 business days."
       lastUpdated=""
     >
-      <div className="w-full flex justify-center bg-gray-50 p-4 md:p-6">
+      <div className="w-full flex justify-center bg-canvas p-4 md:p-6">
         <img
           src="/Contact Page.png"
           alt="Contact Banner"
@@ -75,12 +75,12 @@ export default function ContactUs() {
         />
       </div>
 
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
+      <div className="min-h-screen flex items-center justify-center bg-canvas p-6">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="max-w-4xl w-full bg-surface border border-line rounded-2xl shadow-lg p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {/* Left: contact info */}
           <div className="flex flex-col justify-between">
@@ -89,17 +89,17 @@ export default function ContactUs() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <a href="mailto:hello@example.com" className="text-sm text-blue-600">support@cricketfanapp.com</a>
+                  <a href="mailto:hello@example.com" className="text-sm text-accent-hover">support@cricketfanapp.com</a>
                 </div>
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <a href="tel:+918585955704" className="text-sm text-blue-600">+918585955704</a>
+                  <a href="tel:+918585955704" className="text-sm text-accent-hover">+918585955704</a>
                 </div>
 
               </div>
             </div>
 
-            <div className="mt-6 text-sm text-gray-500">
+            <div className="mt-6 text-sm text-muted">
               <p>Or reach out on social media:</p>
               <div className="flex gap-3 mt-3">
                 <a href="https://x.com/cricketfanapp" aria-label="Twitter" className="underline">Twitter</a>
@@ -113,21 +113,21 @@ export default function ContactUs() {
           <form onSubmit={handleSubmit} className="space-y-4" noValidate>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               <label className="flex flex-col">
-                <span className="text-sm font-medium">Name <span className="text-red-500">*</span></span>
+                <span className="text-sm font-medium">Name <span className="text-red-400">*</span></span>
                 <input
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? "name-error" : undefined}
-                  className={`mt-1 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-1 ${errors.name ? 'border-red-400' : 'border-gray-200'}`}
+                  className={`mt-1 px-3 py-2 rounded-lg border bg-canvas placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface ${errors.name ? 'border-red-400' : 'border-line'}`}
                   placeholder="Your full name"
                 />
-                {errors.name && <span id="name-error" className="text-xs text-red-600 mt-1">{errors.name}</span>}
+                {errors.name && <span id="name-error" className="text-xs text-red-300 mt-1">{errors.name}</span>}
               </label>
 
               <label className="flex flex-col">
-                <span className="text-sm font-medium">Email <span className="text-red-500">*</span></span>
+                <span className="text-sm font-medium">Email <span className="text-red-400">*</span></span>
                 <input
                   name="email"
                   type="email"
@@ -135,10 +135,10 @@ export default function ContactUs() {
                   onChange={handleChange}
                   aria-invalid={!!errors.email}
                   aria-describedby={errors.email ? "email-error" : undefined}
-                  className={`mt-1 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-1 ${errors.email ? 'border-red-400' : 'border-gray-200'}`}
+                  className={`mt-1 px-3 py-2 rounded-lg border bg-canvas placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface ${errors.email ? 'border-red-400' : 'border-line'}`}
                   placeholder="you@company.com"
                 />
-                {errors.email && <span id="email-error" className="text-xs text-red-600 mt-1">{errors.email}</span>}
+                {errors.email && <span id="email-error" className="text-xs text-red-300 mt-1">{errors.email}</span>}
               </label>
             </div>
 
@@ -151,10 +151,10 @@ export default function ContactUs() {
                   onChange={handleChange}
                   aria-invalid={!!errors.phone}
                   aria-describedby={errors.phone ? "phone-error" : undefined}
-                  className={`mt-1 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-1 ${errors.phone ? 'border-red-400' : 'border-gray-200'}`}
+                  className={`mt-1 px-3 py-2 rounded-lg border bg-canvas placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface ${errors.phone ? 'border-red-400' : 'border-line'}`}
                   placeholder="Optional"
                 />
-                {errors.phone && <span id="phone-error" className="text-xs text-red-600 mt-1">{errors.phone}</span>}
+                {errors.phone && <span id="phone-error" className="text-xs text-red-300 mt-1">{errors.phone}</span>}
               </label>
 
               <label className="flex flex-col">
@@ -163,14 +163,14 @@ export default function ContactUs() {
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
-                  className="mt-1 px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
+                  className="mt-1 px-3 py-2 rounded-lg border border-line bg-canvas focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface"
                   placeholder="Short summary"
                 />
               </label>
             </div>
 
             <label className="flex flex-col">
-              <span className="text-sm font-medium">Message <span className="text-red-500">*</span></span>
+              <span className="text-sm font-medium">Message <span className="text-red-400">*</span></span>
               <textarea
                 name="message"
                 value={form.message}
@@ -178,17 +178,17 @@ export default function ContactUs() {
                 rows={6}
                 aria-invalid={!!errors.message}
                 aria-describedby={errors.message ? "message-error" : undefined}
-                className={`mt-1 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-1 ${errors.message ? 'border-red-400' : 'border-gray-200'}`}
+                className={`mt-1 px-3 py-2 rounded-lg border bg-canvas placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface ${errors.message ? 'border-red-400' : 'border-line'}`}
                 placeholder="Tell us a bit more about your request."
               />
-              {errors.message && <span id="message-error" className="text-xs text-red-600 mt-1">{errors.message}</span>}
+              {errors.message && <span id="message-error" className="text-xs text-red-300 mt-1">{errors.message}</span>}
             </label>
 
             <div className="flex items-center gap-3">
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="inline-flex items-center justify-center px-5 py-2 rounded-lg bg-blue-600 text-white font-medium disabled:opacity-60"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-lg bg-accent text-canvas hover:bg-accent-hover font-medium disabled:opacity-60"
               >
                 {status === "sending" ? "Sending..." : "Send Message"}
               </button>
@@ -196,20 +196,20 @@ export default function ContactUs() {
               <button
                 type="button"
                 onClick={() => { setForm({ name: "", email: "", phone: "", subject: "", message: "" }); setErrors({}); setStatus("idle"); setServerMessage(""); }}
-                className="px-4 py-2 rounded-lg border bg-white"
+                className="px-4 py-2 rounded-lg border border-line bg-panel hover:bg-surface"
               >
                 Reset
               </button>
             </div>
 
             {status === "success" && (
-              <div role="status" className="text-sm text-green-700">{serverMessage}</div>
+              <div role="status" className="text-sm text-green-300">{serverMessage}</div>
             )}
             {status === "error" && (
-              <div role="alert" className="text-sm text-red-700">{serverMessage}</div>
+              <div role="alert" className="text-sm text-red-300">{serverMessage}</div>
             )}
 
-            <p className="text-xs text-gray-400">By sending this message you agree to our <a href="/privacy" className="underline">privacy policy</a>.</p>
+            <p className="text-xs text-muted">By sending this message you agree to our <a href="/privacy" className="underline">privacy policy</a>.</p>
           </form>
         </motion.div>
       </div>

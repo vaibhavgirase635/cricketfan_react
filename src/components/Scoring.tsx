@@ -43,7 +43,7 @@ const Scoring: React.FC = () => {
   ];
 
   return (
-    <section id="scoring" className="section bg-white">
+    <section id="scoring" className="section bg-canvas">
       <div className="container">
         <motion.div
           ref={ref}
@@ -52,11 +52,11 @@ const Scoring: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-accent-hover rounded-full mb-4">
             Live Scoring
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Scoring</h2>
-          <p className="text-neutral-600 max-w-3xl mx-auto mb-6">
+          <p className="text-muted max-w-3xl mx-auto mb-6">
             Every ball counts — and so does every point! With CricketFanApp's smart live scoring system, you can capture every moment of the game in real time. Whether you're playing in a backyard league or a professional tournament, our scoring tools make match tracking effortless, accurate, and exciting.
           </p>
         </motion.div>
@@ -70,15 +70,15 @@ const Scoring: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-neutral-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
+                className="bg-surface border border-line p-6 rounded-xl hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-secondary-500 to-secondary-900 rounded-full flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-accent-deep to-surface rounded-full flex items-center justify-center mb-4">
                   <div className="text-white">
                     {highlight.icon}
                   </div>
                 </div>
                 <h4 className="font-semibold text-lg mb-2">{highlight.title}</h4>
-                <p className="text-neutral-600 text-sm">{highlight.description}</p>
+                <p className="text-muted text-sm">{highlight.description}</p>
               </motion.div>
             ))}
           </div>
@@ -88,7 +88,7 @@ const Scoring: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-secondary-600 to-secondary-900 rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-r from-panel to-surface rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <div className="max-w-3xl mx-auto">
             <Coins size={48} className="mx-auto mb-4" />

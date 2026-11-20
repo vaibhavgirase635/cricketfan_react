@@ -11,8 +11,8 @@ const FoundersMessage: React.FC = () => {
   const [showVideo, setShowVideo] = React.useState(false);
 
   return (
-    <section id="founder_message" className="section bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,107,53,0.05)_0%,rgba(255,255,255,0)_70%)]"></div>
+    <section id="founder_message" className="section bg-canvas relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(84,151,242,0.05)_0%,rgba(255,255,255,0)_70%)]"></div>
       <div className="container">
         <motion.div
           ref={ref}
@@ -21,11 +21,11 @@ const FoundersMessage: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-accent-hover rounded-full mb-4">
             From Our Founder
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Why We Built CricketFanApp</h2>
-          <p className="text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-muted max-w-3xl mx-auto">
             Our journey to revolutionize the cricket experience for fans, players, and organizers worldwide.
           </p>
         </motion.div>
@@ -46,9 +46,9 @@ const FoundersMessage: React.FC = () => {
               />
               <button 
                 onClick={() => setShowVideo(true)}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-surface rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
               >
-                <Play size={24} className="text-secondary-600 ml-1" />
+                <Play size={24} className="text-accent-hover ml-1" />
               </button>
             </div>
           </motion.div>
@@ -59,7 +59,7 @@ const FoundersMessage: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.4 }}
           >
             <div className="space-y-6">
-              <blockquote className="text-lg text-neutral-700 leading-relaxed">
+              <blockquote className="text-lg text-muted leading-relaxed">
                 "Cricket has always been more than just a sport—it's a passion that brings people together. With CricketFanApp, we're creating a platform that celebrates this passion and makes cricket more accessible and enjoyable for everyone involved."
               </blockquote>
               
@@ -71,11 +71,11 @@ const FoundersMessage: React.FC = () => {
                 />
                 <div className="ml-4">
                   <h4 className="font-semibold text-lg">Ashish</h4>
-                  <p className="text-neutral-600">Founder & CEO</p>
+                  <p className="text-muted">Founder & CEO</p>
                 </div>
               </div>
 
-              <div className="space-y-4 text-neutral-600">
+              <div className="space-y-4 text-muted">
                 <p>
                   Our mission is to empower cricket enthusiasts with tools that enhance their experience, whether they're playing, organizing, or following the sport.
                 </p>
@@ -94,7 +94,7 @@ const FoundersMessage: React.FC = () => {
           <div className="relative w-full max-w-4xl aspect-video">
             <button
               onClick={() => setShowVideo(false)}
-              className="absolute -top-12 right-0 text-white hover:text-secondary-500 transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-accent transition-colors"
             >
               <X size={24} />
             </button>

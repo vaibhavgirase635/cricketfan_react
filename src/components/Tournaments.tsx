@@ -41,30 +41,30 @@ const TournamentCard: React.FC<TournamentProps> = ({
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute bottom-4 left-4 z-20">
-          <span className="bg-secondary-600 text-white text-xs py-1 px-3 rounded-full">
+          <span className="bg-panel text-accent-hover text-xs py-1 px-3 rounded-full">
             Featured
           </span>
         </div>
       </div>
       
-      <h3 className="text-xl font-semibold mb-3 group-hover:text-secondary-600 transition-colors">{title}</h3>
+      <h3 className="text-xl font-semibold mb-3 group-hover:text-accent-hover transition-colors">{title}</h3>
       
-      <div className="space-y-2 text-sm text-neutral-600 mb-4">
+      <div className="space-y-2 text-sm text-muted mb-4">
         <div className="flex items-center">
-          <Users size={16} className="mr-2 text-secondary-600" />
+          <Users size={16} className="mr-2 text-accent-hover" />
           <span>{teams} Teams</span>
         </div>
         <div className="flex items-center">
-          <Calendar size={16} className="mr-2 text-secondary-600" />
+          <Calendar size={16} className="mr-2 text-accent-hover" />
           <span>{date}</span>
         </div>
         <div className="flex items-center">
-          <MapPin size={16} className="mr-2 text-secondary-600" />
+          <MapPin size={16} className="mr-2 text-accent-hover" />
           <span>{location}</span>
         </div>
       </div>
       
-      <button className="text-secondary-600 font-medium hover:text-secondary-700 transition-colors flex items-center">
+      <button className="text-accent font-medium hover:text-accent-hover transition-colors flex items-center">
         <span>View Details</span>
         <svg className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -112,7 +112,7 @@ const Tournaments: React.FC = () => {
   }, []);
 
   return (
-    <section id="tournaments" className="section bg-white">
+    <section id="tournaments" className="section bg-canvas">
       <div className="container">
         <motion.div
           ref={ref}
@@ -121,61 +121,61 @@ const Tournaments: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-accent-hover rounded-full mb-4">
             Featured Tournaments
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Tournaments</h2>
-          <p className="text-neutral-600 max-w-3xl mx-auto mb-8">
+          <p className="text-muted max-w-3xl mx-auto mb-8">
             Whether you're hosting a local game or competing in a league, CricketFanApp makes tournament management simple and exciting.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left mb-12">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4 text-secondary-600">For Organizers:</h3>
-              <ul className="space-y-2 text-neutral-700">
+            <div className="bg-surface border border-line p-6 rounded-xl shadow-sm">
+              <h3 className="text-xl font-semibold mb-4 text-accent-hover">For Organizers:</h3>
+              <ul className="space-y-2 text-muted">
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Create and customize tournaments with ease.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Add teams, fixtures, and live scores.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Track standings, leaderboards, and player stats automatically.</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4 text-secondary-600">For Players & Fans:</h3>
-              <ul className="space-y-2 text-neutral-700">
+            <div className="bg-surface border border-line p-6 rounded-xl shadow-sm">
+              <h3 className="text-xl font-semibold mb-4 text-accent-hover">For Players & Fans:</h3>
+              <ul className="space-y-2 text-muted">
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Join and follow your favorite tournaments in real time.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Earn coins for participation and performance.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-secondary-600 mr-2">•</span>
+                  <span className="text-accent-hover mr-2">•</span>
                   <span>Share and celebrate every win with your community.</span>
                 </li>
               </ul>
             </div>
           </div>
           
-          <p className="text-neutral-700 font-medium text-lg">
+          <p className="text-muted font-medium text-lg">
             From street matches to full leagues — your tournament, your rules, your platform.
           </p>
         </motion.div>
 
         {loading ? (
           <div className="text-center py-12">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-secondary-600"></div>
-            <p className="mt-4 text-neutral-600">Loading tournaments...</p>
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-accent"></div>
+            <p className="mt-4 text-muted">Loading tournaments...</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
