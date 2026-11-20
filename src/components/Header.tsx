@@ -43,14 +43,14 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-          ? 'bg-white shadow-md py-2 top-0'
+          ? 'bg-canvas border-b border-line shadow-md py-2 top-0'
           : 'bg-transparent py-4 top-0'
         }`}
     >
       <div className="container flex justify-between items-center">
         <div className="flex flex-col items-start">
           <Logo />
-          <div className="inline-block mt-1 px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full text-sm">
+          <div className="inline-block mt-1 px-4 py-1 bg-panel text-accent-hover rounded-full text-sm">
             Where Every Score Pays
           </div>
         </div>
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
             <div key={item.label} className="relative group">
               <a
                 href={item.href}
-                className="text-neutral-800 hover:text-primary-600 font-medium transition-colors"
+                className="text-ink hover:text-accent-hover font-medium transition-colors"
                 onClick={(e) => {
                   if (item.dropdown) {
                     e.preventDefault();
@@ -88,13 +88,13 @@ const Header: React.FC = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 z-10"
+                      className="absolute left-0 mt-2 w-48 bg-surface border border-line rounded-lg shadow-xl py-2 z-10"
                     >
                       {item.dropdown.map((dropdownItem) => (
                         <a
                           key={dropdownItem.label}
                           href={dropdownItem.href}
-                          className="block px-4 py-2 hover:bg-neutral-100 text-neutral-700"
+                          className="block px-4 py-2 hover:bg-panel text-muted"
                           onClick={() => setActiveDropdown(null)}
                         >
                           {dropdownItem.label}
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-neutral-800"
+          className="md:hidden text-ink"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -130,9 +130,9 @@ const Header: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 right-0 h-screen w-3/4 bg-white shadow-2xl flex flex-col z-50 md:hidden"
+              className="fixed top-0 right-0 h-screen w-3/4 bg-surface shadow-2xl flex flex-col z-50 md:hidden"
             >
-              <div className="flex justify-between items-center p-6 border-b">
+              <div className="flex justify-between items-center p-6 border-b border-line">
                 <Logo />
                 <button onClick={() => setMobileMenuOpen(false)}>
                   <X size={24} />
@@ -152,7 +152,7 @@ const Header: React.FC = () => {
                             setMobileMenuOpen(false);
                           }
                         }}
-                        className="flex justify-between items-center px-6 py-3 text-lg hover:bg-neutral-100"
+                        className="flex justify-between items-center px-6 py-3 text-lg hover:bg-panel"
                       >
                         {item.label}
                         {item.dropdown && (
@@ -163,12 +163,12 @@ const Header: React.FC = () => {
                         )}
                       </a>
                       {item.dropdown && activeDropdown === item.label && (
-                        <div className="bg-neutral-50 py-2">
+                        <div className="bg-canvas py-2">
                           {item.dropdown.map((dropdownItem) => (
                             <a
                               key={dropdownItem.label}
                               href={dropdownItem.href}
-                              className="block px-10 py-2 hover:bg-neutral-100"
+                              className="block px-10 py-2 hover:bg-panel"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               {dropdownItem.label}
@@ -180,7 +180,7 @@ const Header: React.FC = () => {
                   ))}
                 </nav>
               </div>
-              <div className="p-6 border-t">
+              <div className="p-6 border-t border-line">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.cricketfanapp.app"
                   className="btn btn-primary w-full"

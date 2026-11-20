@@ -50,12 +50,12 @@ const StatCounter: React.FC<StatProps> = ({
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
-      className="text-center bg-white/90 backdrop-blur-sm rounded-lg p-4"
+      className="text-center bg-surface/90 backdrop-blur-sm rounded-lg p-4"
     >
-      <div className="text-4xl md:text-5xl font-bold text-secondary-600 mb-2">
+      <div className="text-4xl md:text-5xl font-bold text-accent-hover mb-2">
         {prefix}{inView ? count : 0}{suffix}
       </div>
-      <div className="text-neutral-800 font-medium">{label}</div>
+      <div className="text-ink font-medium">{label}</div>
     </motion.div>
   );
 };
@@ -100,8 +100,8 @@ const Stats: React.FC = () => {
   }, []);
 
   return (
-    <section id="stats" className="py-20 bg-neutral-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(26,95,122,0.4)_0%,rgba(255,107,53,0)_70%)]"></div>
+    <section id="stats" className="py-20 bg-canvas relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(84,151,242,0.16)_0%,rgba(84,151,242,0)_70%)]"></div>
       
       {/* Cricket ball decoration */}
       <div className="absolute -right-24 -top-24 w-48 h-48 opacity-10 cricket-ball-spin">
@@ -119,18 +119,18 @@ const Stats: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <div className="inline-block px-4 py-1 bg-white/20 text-white rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-white rounded-full mb-4">
             Performance Analytics
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Stats</h2>
-          <p className="text-secondary-100 max-w-3xl mx-auto mb-6">
+          <p className="text-muted max-w-3xl mx-auto mb-6">
             Because numbers tell the story of every great game. CricketFanApp gives players, teams, and fans access to detailed, real-time statistics — making it easier to analyze performance and celebrate milestones.
           </p>
           
-          <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-12">
+          <div className="max-w-4xl mx-auto bg-surface/80 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-12">
             <h3 className="text-xl font-semibold text-white mb-4">What You Can Track:</h3>
             <div className="grid md:grid-cols-2 gap-4 text-left">
-              <ul className="space-y-2 text-secondary-100">
+              <ul className="space-y-2 text-muted">
                 <li className="flex items-start">
                   <span className="text-white mr-2">•</span>
                   <span>Batting, bowling, and fielding stats for every player</span>
@@ -144,7 +144,7 @@ const Stats: React.FC = () => {
                   <span>Win/loss ratios, averages, and strike rates</span>
                 </li>
               </ul>
-              <ul className="space-y-2 text-secondary-100">
+              <ul className="space-y-2 text-muted">
                 <li className="flex items-start">
                   <span className="text-white mr-2">•</span>
                   <span>Tournament and match-based analytics</span>
@@ -160,7 +160,7 @@ const Stats: React.FC = () => {
           <p className="text-white text-lg font-medium mb-2">
             Every stat you build adds to your CricketFanApp profile — growing your legacy within the game and earning you coins for consistent performance.
           </p>
-          <p className="text-secondary-100 text-lg italic">
+          <p className="text-muted text-lg italic">
             Because here, every score and every stat truly counts.
           </p>
         </motion.div>
@@ -175,7 +175,7 @@ const Stats: React.FC = () => {
         </motion.div>
         
         {/* ✅ Dynamic Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-secondary">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-ink">
           <StatCounter value={stats.active_users} label="Active Users" />
           <StatCounter value={stats.tournaments} label="Tournaments" />
           <StatCounter value={stats.matches} label="Matches Scored" />

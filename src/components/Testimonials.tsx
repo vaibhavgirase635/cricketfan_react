@@ -43,16 +43,16 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ content, name, role, avat
           <Star 
             key={i} 
             size={18} 
-            className={`inline-block mr-1 ${i < rating ? 'text-secondary-500 fill-secondary-500' : 'text-neutral-300'}`} 
+            className={`inline-block mr-1 ${i < rating ? 'text-accent fill-accent' : 'text-line'}`}
           />
         ))}
       </div>
-      <p className="text-neutral-700 italic mb-6 flex-grow">{content}</p>
+      <p className="text-muted italic mb-6 flex-grow">{content}</p>
       <div className="flex items-center">
         <img src={avatar} alt={name} className="w-12 h-12 rounded-full object-cover" />
         <div className="ml-4">
           <h4 className="font-semibold">{name}</h4>
-          <p className="text-sm text-neutral-500">{role}</p>
+          <p className="text-sm text-muted">{role}</p>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section id="testimonials" className="section bg-neutral-50">
+    <section id="testimonials" className="section bg-canvas">
       <div className="container">
         <motion.div
           ref={ref}
@@ -100,11 +100,11 @@ const Testimonials: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-accent-hover rounded-full mb-4">
             Testimonials
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Users Say</h2>
-          <p className="text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-muted max-w-3xl mx-auto">
             Discover how CricketFanApp is changing the way cricket enthusiasts experience the game.
           </p>
         </motion.div>
@@ -146,7 +146,7 @@ const Testimonials: React.FC = () => {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? 'bg-primary-600 scale-125' : 'bg-neutral-300'
+                  index === currentIndex ? 'bg-accent scale-125' : 'bg-line'
                 }`}
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to testimonial ${index + 1}`}
@@ -155,7 +155,7 @@ const Testimonials: React.FC = () => {
           </div>
           
           <button 
-            className="absolute top-1/2 left-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-neutral-700"
+            className="absolute top-1/2 left-0 -translate-y-1/2 w-10 h-10 bg-surface rounded-full shadow-md flex items-center justify-center text-muted"
             onClick={prevTestimonial}
             aria-label="Previous testimonial"
           >
@@ -163,7 +163,7 @@ const Testimonials: React.FC = () => {
           </button>
           
           <button 
-            className="absolute top-1/2 right-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-neutral-700"
+            className="absolute top-1/2 right-0 -translate-y-1/2 w-10 h-10 bg-surface rounded-full shadow-md flex items-center justify-center text-muted"
             onClick={nextTestimonial}
             aria-label="Next testimonial"
           >

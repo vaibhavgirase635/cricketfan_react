@@ -33,13 +33,13 @@ const FeatureCard: React.FC<FeatureProps> = ({ icon, title, description, delay }
       transition={{ duration: 0.6, delay: delay * 0.1 }}
       className="feature-card group"
     >
-      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary-500 to-secondary-900 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent-deep to-surface flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
         <div className="text-white">
           {icon}
         </div>
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-neutral-600 leading-relaxed">{description}</p>
+      <p className="text-muted leading-relaxed">{description}</p>
     </motion.div>
   );
 };
@@ -102,7 +102,7 @@ const Features: React.FC = () => {
   });
 
   return (
-    <section id="features" className="section bg-neutral-50">
+    <section id="features" className="section bg-canvas">
       <div className="container">
         <motion.div
           ref={ref}
@@ -111,11 +111,11 @@ const Features: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-1 bg-secondary-100 text-secondary-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1 bg-panel text-accent-hover rounded-full mb-4">
             Powerful Features
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Features</h2>
-          <p className="text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-muted max-w-3xl mx-auto">
             CricketFanApp brings every cricket experience together — live action, competition, rewards, and community — all in one place.
           </p>
         </motion.div>
